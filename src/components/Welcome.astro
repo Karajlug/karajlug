@@ -10,7 +10,7 @@ import bg from '../assets/bg.svg';
 			<a href="https://karajlug.org"
 				><img src={logo.src} width="135" height="55" alt="Karaj Lug" /></a
 			>
-			<p style="margin-top: 15px;max-width: 1000px">
+			<p style="margin-top: 15px">
 	کرج‌لاگ (Karaj Linux Users Group) از سال ۱۳۸۷ به‌عنوان اجتماع داوطلبانه و مستقلِ دوست‌داران گنو/لینوکس و فرهنگ نرم‌افزارهای آزاد در استان البرز شکل گرفته است. ما هر دو هفته یک‌بار در گردهمایی‌های صمیمی دور هم جمع می‌شویم؛ جایی که تازه‌واردها و حرفه‌ای‌ها شانه‌به‌شانه می‌نشینند، تجربه‌ها را به اشتراک می‌گذارند و از هم می‌آموزند.
 <br><br>
 گرچه نقطهٔ آغاز‌مان لینوکس است، دایرهٔ گفتگوها محدود نمی‌ماند: از سیستم‌عامل‌های آزاد و امنیت گرفته تا هوش مصنوعی، رایانش ابری و سخت‌افزار متن‌باز، همه در فهرست موضوعات ما هستند. در این مسیر، طی سال‌ها میزبان رویدادهای متنوعی همچون جشن «روز آزادی نرم‌افزار»، کارگاه‌های آموزشی و دورهمی‌های تفریحی بوده‌ایم و در کنار هم روی پروژه‌های آزاد گوناگونی همکاری کرده‌ایم.
@@ -20,7 +20,6 @@ import bg from '../assets/bg.svg';
     برای آشنایی بیش‌تر با اهداف و فعالیت‌ها
     <a href="/about">صفحهٔ درباره ما</a> را ببینید.
 			</p>
-
 			<p style="margin-top: 25px;">گروه کاربران لینوکس کرج &nbsp; &nbsp; ۱۳۸۷ - ۱۴۰۴</p>
 			<section id="links">
 				<a class="button" href="https://evand.com/organizations/karajlug">رویدادها</a>
@@ -79,13 +78,9 @@ import bg from '../assets/bg.svg';
 		display: flex;
 		align-items: start;
 		flex-direction: column;
-		justify-content: center;
-		padding: 16px;
-	}
-
-	h1 {
-		font-size: 22px;
-		margin-top: 0.25em;
+		/* justify-content: center; */
+		padding: 25px 75px;
+		max-width: 1000px
 	}
 
 	#links {
@@ -132,6 +127,7 @@ import bg from '../assets/bg.svg';
 		line-height: 24px;
 		letter-spacing: -0.006em;
 		margin: 0;
+		text-align: justify;
 	}
 
 	@media screen and (max-height: 368px) {
