@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<script>
+    window.location.href = "#";
+</script>
+
+<Layout>
+  <div id="container">
+    <main>
+      <section id="hero">
+        <h2 style="margin-top: 15px">در حال انتقال...</h2>
+      </section>
+    </main>
+  </div>
+</Layout>
+
+<style>
+	#container {
+		font-family: Vazir;
+		height: 100%;
+	}
+
+	main {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	#hero {
+		display: flex;
+		align-items: start;
+		flex-direction: column;
+		/* justify-content: center; */
+		padding: 25px 75px;
+		max-width: 1000px;
+	}
+
+	p {
+		color: #111827;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.006em;
+		margin: 0;
+		text-align: justify;
+	}
+
+	@media screen and (max-height: 368px) {
+		#news {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		#container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#hero {
+			display: block;
+			padding-top: 10%;
+		}
+	}
+</style>
