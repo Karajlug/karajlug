@@ -1,6 +1,8 @@
 ---
+import logo from '../assets/logo.png';
 import Layout from '../layouts/Layout.astro';
 import bg from '../assets/bg.svg';
+import Links from '../components/Links.astro';
 ---
 
 <Layout>
@@ -8,7 +10,10 @@ import bg from '../assets/bg.svg';
     <img id="background" src={bg.src} alt="" fetchpriority="high" />
     <main>
       <section id="hero">
-        <h2>معرفی کرج‌لاگ</h2>
+      <a href="https://karajlug.org"
+				><img src={logo.src} width="135" height="55" alt="Karaj Lug" /></a
+			>
+        <h2 style="margin-top: 15px">معرفی کرج‌لاگ</h2>
         <p>
           کرج‌لاگ (Karaj&nbsp;Linux&nbsp;Users&nbsp;Group) از اردیبهشت ۱۳۸۷ به‌عنوان اجتماعی داوطلبانه، مستقل و
           غیرانتفاعیِ دوست‌داران گنو/لینوکس و فرهنگ نرم‌افزارهای آزاد در استان البرز شکل گرفت. در این مدت،
@@ -85,10 +90,11 @@ import bg from '../assets/bg.svg';
 
         <!-- دعوت نهایی -->
         <h3>منتظر دیدار شما هستیم!</h3>
-        <p style="padding-bottom:35px">
+        <p style="padding-bottom:15px">
           اگر اشتیاق یادگیری، ذهنی آزاد و روحیهٔ همکاری دارید، کرج‌لاگ جای شماست.
           لینک‌های پایین صفحه را دنبال کنید و در نشست بعدی کنارمان بنشینید.
         </p>
+        <Links />
       </section>
     </main>
   </div>
@@ -122,7 +128,7 @@ import bg from '../assets/bg.svg';
 		flex-direction: column;
 		/* justify-content: center; */
 		padding: 25px 75px;
-    max-width: 1000px
+		max-width: 1000px;
 	}
 
 	p {
@@ -131,7 +137,7 @@ import bg from '../assets/bg.svg';
 		line-height: 24px;
 		letter-spacing: -0.006em;
 		margin: 0;
-    text-align: justify;
+		text-align: justify;
 	}
 
 	@media screen and (max-height: 368px) {
